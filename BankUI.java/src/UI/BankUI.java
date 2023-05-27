@@ -44,7 +44,7 @@ public class BankUI {
         bankFrame.add(bank_area);
         bankFrame.add(bank_button);
         bankFrame.add(getBank_button);
-        bankFrame.setSize(300, 150);
+        bankFrame.setSize(300, 250);
         bankFrame.setVisible(true);
 
         currentFrame = new JFrame("CURRENT ACCOUNT");
@@ -73,7 +73,7 @@ public class BankUI {
         savingsFrame.add(savingsDepositButton);
         savingsFrame.add(savingsAmountField);
         savingsFrame.add(savingsPinField);
-        savingsFrame.setSize(300, 150);
+        savingsFrame.setSize(300, 250);
     }
 
     private void addEventListeners() {
@@ -105,7 +105,7 @@ public class BankUI {
                 // Perform deposit logic for current account
                 JOptionPane.showMessageDialog(null, "Deposit successful.");
             } else {
-                JOptionPane.showMessageDialog(null, "Invalid PIN.");
+                JOptionPane.showMessageDialog(null, "WRONG PIN.");
             }
         });
 
@@ -116,7 +116,7 @@ public class BankUI {
                 // Perform withdrawal logic for savings account
                 JOptionPane.showMessageDialog(null, "Withdrawal successful.");
             } else {
-                JOptionPane.showMessageDialog(null, "Invalid PIN.");
+                JOptionPane.showMessageDialog(null, "WRONG PIN.");
             }
         });
 
